@@ -1,0 +1,291 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .header {
+    position: relative;
+    height: 70vh;
+    background: url('images/g1.jpg') no-repeat center/cover; /* Background image for header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    transition: background-image 0.5s ease;
+  }
+  
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    background: #ff7700; /* Background color for nav */
+    padding: 10px;
+    width: calc(80%);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    overflow: hidden;
+    transition: height 0.3s ease, width 0.3s ease, background-color 0.3s ease;
+  }
+  
+  nav:hover {
+    background-color: transparent;
+    box-shadow: 1px 1px 2px 3px transparent;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background: #000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background: #ff7700;
+  }
+
+  /* Logo Styles */
+.logo {
+    position: absolute;
+    width:fit-content;
+    top: 7%;
+    left: 5%;
+    
+  }
+
+  .logo h5{
+color: #ff6600;
+-webkit-text-stroke: 0.5px #ffffff;
+   
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust the height as needed */
+    width: 70%; /* Maintain aspect ratio */
+  }
+  
+  
+  #heading {
+    font-size: 50px;
+    -webkit-text-stroke: 2px #ff7700;
+    text-shadow:1px 1px #f4ece5, 2px 2px #e4ded9, 3px 3px #dcd8d5;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+ /* Dark Mode Toggle Button Styles */
+ /* Dark Mode Toggle Button Styles */
+#dark-mode-toggle {
+    background: #ff7700; /* Orange background color */
+    border: none;
+    padding: 10px 20px;
+    color: #f4f4f4; /* Light text color */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute; /* Position the button absolutely */
+    top: 25%; /* Center vertically */
+    right: 20px; /* Position from the right side */
+    transform: translateY(-50%); /* Center vertically */
+    transition: background 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    z-index: 1000;
+  }
+  
+  #dark-mode-toggle:hover {
+    background: #ff6600; /* Darker orange on hover */
+  }
+  
+  #sun-icon, #moon-icon {
+    position: absolute;
+    transition: opacity 0.3s ease;
+  }
+  
+  #sun-icon {
+    left: 10px; /* Position the sun icon */
+  }
+  
+  #moon-icon {
+    right: 10px; /* Position the moon icon */
+  }
+  
+  #dark-mode-toggle small {
+    margin: 0 20px; /* Spacing around the text */
+  }
+  
+  .dark-mode #sun-icon {
+    opacity: 0; /* Hide sun icon in dark mode */
+  }
+  
+  .dark-mode #moon-icon {
+    opacity: 1; /* Show moon icon in dark mode */
+  }
+  
+
+  
+  .figures-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: wheat; /* Background color for figures section */
+  }
+  
+  figure {
+    width: 40%;
+    margin: 10px;
+    margin-bottom: 30px;
+    background: lightblue; /* Background color for figures */
+    padding: 4px;
+    color: #000; /* Text color for figures */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  figure:hover {
+    transform: scale(1.05);
+  }
+  
+  .section_intro {
+    width: 100%;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: xx-large;
+    color: #ff7700;
+  }
+  
+  .figures-section img {
+    width: 100%;
+    height: auto;
+  }
+  
+  #small_figure {
+    width: 25%;
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  #small_figure h2 {
+    top: -2px;
+    color: #ff7700;
+  }
+  
+  #small_image {
+    width: 40%;
+    position: relative;
+    top: -20px;
+    border-radius: 15px;
+  }
+  
+  #small_image:hover {
+    transform: scale(1.7);
+  }
+  
+  #more_btn {
+    background: #ff7700; /* Button color */
+    border: none;
+    padding: 10px;
+    color: #f4f4f4; /* Button text color */
+    border-radius: 5px;
+  }
+  
+  #more_btn:hover {
+    transform: translateY(-10px);
+    opacity: 0.5;
+  }
+
+
+  
+    /* Style for the container div */
+    .container {
+      width:60%;
+      height: fit-content;
+      position: relative;
+       border-radius: 20px;
+       margin: auto;  
+       text-align: center;       
+  }
+
+  p {
+      font-size:x-large;
+  }
+
+  /* Style for the image */
+  img {
+      width: 100%; /* Make image take up full width of container */
+      height:auto;
+      
+  }
+
+  /* Style for the font awesome icons */
+  i {
+      position: absolute;
+      top: 50%; /* Vertically center the icon */
+      cursor: pointer; /* Change cursor to pointer on hover */
+      color: #fff; 
+         font-size: medium;
+      font-weight: bold;
+      -webkit-text-stroke: 1px rgb(255, 115, 0);
+  }
+
+  i:hover{
+      color: rgb(255, 115, 0);
+  }
+
+  .back{
+      left:-15px; /* Position the left arrow icon */       
+  }
+
+  .next {
+      right:-15px; /* Position the right arrow icon */
+  }
+
+
+
+  
+  footer {
+    
+    bottom: 0;
+    height:fit-content;
+    padding: 2rem;
+    background: rgb(245, 222, 179); /* Background color for footer */
+    text-align: center;
+    width: 100%;
+    color: #000; /* Text color for footer */
+    box-shadow: 0px -1px 0px 1px #ff7700;
+  }
+  
+  /* Dark Mode Styles */
+  .dark-mode {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+  }
+ .dark-mode figure{
+    background: #343333;
+    color: #f4f4f4;
+ } 
+  .dark-mode .figures-section {
+    background-color: #232323;
+  }
+  
+  .dark-mode #more_btn {
+    background: #ff7700;
+    color: #f4f4f4;
+  }
+  
+  .dark-mode footer {
+    background: #232323;
+    color: #f4f4f4;
+  }
+  

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saple page wamilimo</title>
+<style>
+    html, body {
+background: wheat;
+   }
+
+   button{
+    margin: 20px;
+    padding: 5px 1rem;
+   }
+
+   .sections{
+    background:maroon;
+    padding: 2rem;
+}
+
+   #hillp{
+    margin: 20px;
+    font-size: xx-large;
+   }
+
+   .dark-mode .sections{
+    background: #000;
+   }
+
+</style>
+</head>
+<body>
+    
+    <button id="toggleDarkMode">Click me</button>
+<section class="sections">
+    <p id="hillp">see</p>
+</section>
+    
+
+
+<script>
+    /*toggle dark mode* listener*/
+document.getElementById("toggleDarkMode").addEventListener("click",toggleDarkMode );
+
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+}
+
+
+
+</script>
+
+</body>
+</html>

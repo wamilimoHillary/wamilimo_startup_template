@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header with Background Image Animation</title>
+   <!-- Font Awesome CDN-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <!-- Your existing CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+ 
+</head>
+<body>
+
+  <header class="header">
+    
+    <nav class="nav">
+      <a href="#" class="nav-link" style="--bg-hover: url('images/g1.jpg');" data-bg-image="images/g1.jpg" data-heading="Welcome Home">Home</a>
+      <a href="#" class="nav-link" style="--bg-hover: url('images/g2.jpg');" data-bg-image="images/g2.jpg" data-heading="About Us">About</a>
+      <a href="#" class="nav-link" style="--bg-hover: url('images/g3.jpg');" data-bg-image="images/g3.jpg" data-heading="Services">Services</a>
+    </nav>
+<!--logo-->
+    <div class="logo">
+      <img src="images/g1.jpg" alt="Logo" />
+      <h5>@@Vehicle Store</h5>
+    </div>
+
+    <h1 id="heading">Welcome Home of wamilimo templates</h1>
+    <div class="menu-btn" onclick="toggleNav()">☰</div>
+    <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+      <i class="fas fa-sun" id="sun-icon"></i>
+      <i class="fas fa-moon" id="moon-icon"></i>
+      <span>Switch Mode</span>
+    </button>
+
+  </header>
+
+  
+  <section class="figures-section">
+    <div class="section_intro"> We Offer a Range of Vehicles</div>
+    <figure id="small_figure">
+      <img src="images/g1.jpg" alt="Image 1" id="small_image">
+             <h2>WAMILIMO</h2>
+             <p>This is a description of Vehicle 1,
+               offering great performance and comfort.
+                  </p>
+
+             <button id="more_btn">MORE</button>
+    </figure>
+    <figure id="small_figure">
+      <img src="images/g2.jpg" alt="Image 2" id="small_image">
+            <h2>WAMILIMO</h2>
+           
+            <p>This is a simple figure column, its designed by WAMILIMO
+             to serve as a template for the column. feel free to refactor
+              it yourself if you need more  control.
+            </p>
+            <button id="more_btn">MORE</button>
+    </figure>
+    <figure id="small_figure">
+      <img src="images/g2.jpg" alt="Image 2" id="small_image">
+            <h2>WAMILIMO</h2>
+            
+            <p>This is a description of Vehicle 2, known for its efficiency and style.
+
+            </p>
+            <button id="more_btn">MORE</button>
+    </figure>
+    </section>
+
+  <section class="figures-section">
+    <figure>
+      <img src="images/g1.jpg" alt="Image 1">
+      <figcaption>A m planning to have this soon</figcaption>
+    </figure>
+    <figure>
+      <img src="images/g2.jpg" alt="Image 2">
+      <figcaption>Using money money is a habit to emulate</figcaption>
+    </figure>
+    </section>
+    <section class="figures-section">
+     
+      </section>
+
+
+      <section class="figures-section">
+        <div class="section_intro"> We Offer a Range of Vehicles</div>
+        <figure id="small_figure">
+          <img src="images/g1.jpg" alt="Image 1" id="small_image">
+                 <h2>WAMILIMO</h2>
+                 <p>This is a description of Vehicle 1,
+                   offering great performance and comfort.
+                      </p>
+    
+                 <button id="more_btn">MORE</button>
+        </figure>
+        <figure id="small_figure">
+          <img src="images/g2.jpg" alt="Image 2" id="small_image">
+                <h2>WAMILIMO</h2>
+               
+                <p>This is a simple figure column, its designed by WAMILIMO
+                 to serve as a template for the column. feel free to refactor
+                  it yourself if you need more  control.
+                </p>
+                <button id="more_btn">MORE</button>
+        </figure>
+        <figure id="small_figure">
+          <img src="images/g2.jpg" alt="Image 2" id="small_image">
+                <h2>WAMILIMO</h2>
+                
+                <p>This is a description of Vehicle 2, known for its efficiency and style.
+    
+                </p>
+                <button id="more_btn">MORE</button>
+        </figure>
+        </section>
+    
+
+      
+        <!--section 4-->
+        
+  <section class="figures-section">
+    <figure>
+      <img src="images/g1.jpg" alt="Image 1">
+      <figcaption>A m planning to have this soon</figcaption>
+    </figure>
+    <figure>
+      <img src="images/g2.jpg" alt="Image 2">
+      <figcaption>Using money money is a habit to emulate</figcaption>
+    </figure>
+    </section>
+    <section class="figures-section">
+     
+      </section>
+
+<footer>
+                    <a href="" style="background: #ff6600; padding: 5px; border-radius: 5px;text-decoration: none;color: #fff;">TOP</a> <br><hr>
+  &copy; Copyright || all rights reserved designed by WAMILIMO <br> github  account  wamilimoHillary
+</footer>
+
+
+  <script>
+    function toggleNav() {
+      const nav = document.querySelector('.nav');
+      const menuBtn = document.querySelector('.menu-btn');
+      nav.classList.toggle('active');
+      menuBtn.classList.toggle('active');
+      if (menuBtn.classList.contains('active')) {
+        menuBtn.innerHTML = "&#10005;"; // Close icon when menu is active
+      } else {
+        menuBtn.innerHTML = "&#9776;"; // Hamburger icon when menu is not active
+      }
+    }
+
+  /*Event listener for that toggles dark mode and light mode */
+    document.getElementById('dark-mode-toggle').addEventListener('click',toggleDarkMode );
+
+   /*function to toggle dark mode and light mode*/ 
+  function toggleDarkMode(){
+    document.body.classList.toggle('dark-mode');
+  }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const header = document.querySelector('.header');
+      const heading = document.getElementById('heading');
+      const navLinks = document.querySelectorAll('.nav-link');
+      
+      navLinks.forEach(link => {
+        link.addEventListener('mouseover', function() {
+          const bgImage = this.getAttribute('data-bg-image');
+          const newHeading = this.getAttribute('data-heading');
+          header.style.backgroundImage = `var(--bg-hover, url('${bgImage}'))`;
+          heading.textContent = newHeading;
+        });
+        link.addEventListener('mouseout', function() {
+          header.style.backgroundImage = `url('images/g1.jpg')`; // Default to g1.jpg on mouseout
+          heading.textContent = 'Welcome Home'; // Default heading text on mouseout
+        });
+      });
+    });
+
+  </script>
+
+</body>
+</html>
